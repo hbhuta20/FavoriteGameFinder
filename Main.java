@@ -5,4 +5,4 @@ class Main {
    Scanner scan = new Scanner (System.in);
 
   }
-}
+}// I was thinking on what to do for a long time so I was only able to this for now, but I will finish the project on the weekends.
