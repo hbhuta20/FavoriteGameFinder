@@ -3,6 +3,26 @@ import java.util.Scanner; // This is really important for you to use scanner wit
 class Main {
   public static void main(String[] args) {
    Scanner scan = new Scanner (System.in);
+  
+    System.out.println("Please enter a number:");//added a print statement.
+    int a = scan.nextInt();
+    int t = transform(a);
+    String p = prefer(t);
+    System.out.println(p); // added another print statement.
 
   }
-}// I was thinking on what to do for a long time so I was only able to this for now, but I will finish the project on the weekends.
+  static int transform(int a)// Added method for transforming a
+  {
+    return 5*a-a+3;  
+  }
+
+  static String prefer(int t)// Added method for transforming t
+  {
+    if (t > 50){
+      return "You will prefer Fortnite!! ";
+    }
+    else{
+      return "You will prefer Minecraft!!";
+    }
+  }
+}
